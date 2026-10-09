@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="五个顶点、六条边但不连通的无向图反例：四个顶点构成完全图 K4，第五个顶点孤立">
+  <rect width="1200" height="800" rx="24" fill="#0d1118"/>
+  <rect x="24" y="24" width="1152" height="752" rx="20" fill="#111824" stroke="#273347" stroke-width="2"/>
+
+  <text x="64" y="82" fill="#f2f5fb" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif" font-size="31" font-weight="700">反例：边数多于顶点数，图仍不连通</text>
+  <text x="64" y="119" fill="#aebbd0" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif" font-size="19">四个顶点构成完全图 K₄，第五个顶点孤立</text>
+
+  <rect x="76" y="150" width="670" height="390" rx="18" fill="#0d131d" stroke="#273347" stroke-width="2"/>
+  <rect x="794" y="150" width="330" height="390" rx="18" fill="#0d131d" stroke="#273347" stroke-width="2"/>
+
+  <!-- K4 的六条边：四条边框加两条对角线 -->
+  <g fill="none" stroke="#8291aa" stroke-width="8" stroke-linecap="round">
+    <line x1="294" y1="240" x2="506" y2="240"/>
+    <line x1="294" y1="450" x2="506" y2="450"/>
+    <line x1="260" y1="274" x2="260" y2="416"/>
+    <line x1="540" y1="274" x2="540" y2="416"/>
+    <line x1="286" y1="266" x2="514" y2="424"/>
+    <line x1="514" y1="266" x2="286" y2="424"/>
+  </g>
+
+  <!-- 顶点 -->
+  <g fill="#2563eb" stroke="#8ab4ff" stroke-width="3">
+    <circle cx="260" cy="240" r="38"/>
+    <circle cx="540" cy="240" r="38"/>
+    <circle cx="260" cy="450" r="38"/>
+    <circle cx="540" cy="450" r="38"/>
+    <circle cx="959" cy="302" r="42"/>
+  </g>
+  <g fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif" font-size="29" font-weight="700" text-anchor="middle" dominant-baseline="central">
+    <text x="260" y="240">1</text>
+    <text x="540" y="240">2</text>
+    <text x="260" y="450">3</text>
+    <text x="540" y="450">4</text>
+    <text x="959" y="302">5</text>
+  </g>
+
+  <text x="411" y="508" fill="#c7d2e2" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif" font-size="20" text-anchor="middle">连通分量 1：完全图 K₄</text>
+  <text x="959" y="382" fill="#ff626d" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif" font-size="22" font-weight="700" text-anchor="middle">孤立顶点</text>
+  <text x="959" y="416" fill="#c7d2e2" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif" font-size="18" text-anchor="middle">连通分量 2</text>
+
+  <line x1="64" y1="574" x2="1136" y2="574" stroke="#2b3749" stroke-width="2"/>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif" text-anchor="middle">
+    <text x="250" y="624" fill="#aebbd0" font-size="18">顶点数 |V|</text>
+    <text x="250" y="671" fill="#f2f5fb" font-size="36" font-weight="700">5</text>
+    <text x="600" y="624" fill="#aebbd0" font-size="18">边数 |E|</text>
+    <text x="600" y="671" fill="#f2f5fb" font-size="36" font-weight="700">6</text>
+    <text x="950" y="624" fill="#aebbd0" font-size="18">连通分量</text>
+    <text x="950" y="671" fill="#f2f5fb" font-size="36" font-weight="700">2</text>
+  </g>
+
+  <rect x="338" y="704" width="524" height="48" rx="12" fill="#18243a" stroke="#35517f" stroke-width="2"/>
+  <text x="600" y="736" fill="#dce8ff" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif" font-size="25" font-weight="700" text-anchor="middle">|V| = 5 &lt; 6 = |E|，但图不连通</text>
+</svg>
