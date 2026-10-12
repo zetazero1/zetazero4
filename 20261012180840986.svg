@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="620" viewBox="0 0 1440 620" role="img" aria-labelledby="title desc">
+  <title id="title">路径无关时普通曲线与闭曲线积分的区别</title>
+  <desc id="desc">左侧两条从 A 到 B 的不同路径积分相等，但不一定为零；右侧闭曲线起点和终点相同，因此路径无关时积分为零。</desc>
+  <defs>
+    <marker id="arrowBlue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth"><path d="M1,1 L11,6 L1,11 Z" fill="#1677c8"/></marker>
+    <marker id="arrowGreen" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth"><path d="M1,1 L11,6 L1,11 Z" fill="#15966b"/></marker>
+    <marker id="arrowLoop" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth"><path d="M1,1 L11,6 L1,11 Z" fill="#1677c8"/></marker>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #17212b; }
+      .heading { font-size: 28px; font-weight: 700; }
+      .label { font-size: 23px; font-weight: 600; }
+      .caption { font-size: 21px; }
+      .small { font-size: 18px; fill: #45525f; }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="1440" height="620" rx="24" fill="#f6f8fb"/>
+  <text x="720" y="48" text-anchor="middle" class="heading">路径无关时：普通曲线与闭曲线的区别</text>
+
+  <rect x="34" y="76" width="672" height="510" rx="20" fill="#ffffff" stroke="#d5dee8" stroke-width="2"/>
+  <rect x="734" y="76" width="672" height="510" rx="20" fill="#ffffff" stroke="#d5dee8" stroke-width="2"/>
+
+  <text x="370" y="120" text-anchor="middle" class="heading">普通曲线：起点与终点不同</text>
+  <path d="M145 335 C170 205 305 190 420 235 C475 256 518 278 555 300" fill="none" stroke="#1677c8" stroke-width="9" stroke-linecap="round" marker-end="url(#arrowBlue)"/>
+  <path d="M145 335 C240 420 380 412 455 366 C502 337 531 318 555 300" fill="none" stroke="#15966b" stroke-width="9" stroke-linecap="round" marker-end="url(#arrowGreen)"/>
+  <circle cx="145" cy="335" r="12" fill="#ffffff" stroke="#263544" stroke-width="3"/>
+  <circle cx="555" cy="300" r="12" fill="#ffffff" stroke="#263544" stroke-width="3"/>
+  <text x="116" y="376" class="label">A</text>
+  <text x="572" y="300" class="label">B</text>
+  <text x="298" y="199" class="label" fill="#1677c8">L₁</text>
+  <text x="323" y="405" class="label" fill="#15966b">L₂</text>
+  <text x="370" y="474" text-anchor="middle" class="caption">∫ₗ₁ P dx + Q dy = ∫ₗ₂ P dx + Q dy</text>
+  <text x="370" y="516" text-anchor="middle" class="small">两条同端点路径积分相等，但共同值不一定为 0</text>
+  <text x="370" y="550" text-anchor="middle" class="small">全微分时，该值由 F(B) − F(A) 决定</text>
+
+  <text x="1070" y="120" text-anchor="middle" class="heading">闭曲线：起点与终点相同</text>
+  <path d="M1197 300 A130 105 0 1 1 1196.5 300" fill="none" stroke="#1677c8" stroke-width="9" stroke-linecap="round" marker-end="url(#arrowLoop)"/>
+  <circle cx="1197" cy="300" r="12" fill="#ffffff" stroke="#263544" stroke-width="3"/>
+  <text x="1219" y="307" class="label">A</text>
+  <text x="1070" y="309" text-anchor="middle" class="label" fill="#45525f">C</text>
+  <text x="1070" y="474" text-anchor="middle" class="caption">∮꜀ P dx + Q dy = F(A) − F(A) = 0</text>
+  <text x="1070" y="516" text-anchor="middle" class="small">路径无关时，闭曲线积分必为 0</text>
+  <text x="1070" y="550" text-anchor="middle" class="small">因为起点 = 终点，端点函数值相消</text>
+</svg>
